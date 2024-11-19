@@ -139,7 +139,23 @@ height: inherit;
     font-size: 36px;
 }
 
+#sponsors {
+    display: flex;
+
+}
+.spimage{
+    /* height: inherit; */
+    height: 150px;
+    margin: 26px auto;
+    padding: 5px 15px;
+}
 #footer{
-    height: 100px;
-    background-color: aqua;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Yeon Sung", system-ui;
+    font-size: 20px;
 }
