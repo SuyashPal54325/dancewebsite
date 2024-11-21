@@ -1,21 +1,13 @@
-doctype html
-html
-  head
-    title Suyash Dance Academy 
-    style
-      include ../static/style.css
-  body
-    nav#navbar
-        ul
-            div#logo 
-                img(src="/static/Images/dancewebsiteimage-logo.jpg", alt="logo")
-                h4 SDA
-            li #[a(href="/") Home] 
-            li #[a(href="/") Services]
-            li #[a(href="/") Class INFO] 
-            li #[a(href="/") About] 
-            li #[a(href="/") Contact Us] 
+extends base.pug 
 
+//- block script 
+//-     script(src='../static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+
+block content 
     section#introSection 
         div Welcome To Suyash's Dance Academy
         div.small Eat Sleep Dance Repeat
@@ -52,8 +44,6 @@ html
             img(src="/static/Images/skypeImagedancewebsite.jpg", alt="sponsors1" , class="spimage")
             img(src="/static/Images/appplelogodancewebsite.jpg", alt="sponsors1" , class="spimage")
     
-    footer#footer 
-        |Copyright &copy; 2024 SuyashDanceAcademy.com | All rights Reserved
 
-    script 
-      include ../static/index.js
+
+
